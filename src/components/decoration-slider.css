@@ -1,0 +1,50 @@
+
+.decoration-slider {
+	display: flex;
+	height: 48px;
+	background-color: white;
+}
+
+.decoration-slider div {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	margin-right: 100px;
+	animation: slide-logo 60s linear infinite;
+}
+
+.decoration-slider div img {
+	display: block;
+}
+
+@keyframes slide-logo {
+	0% {transform: translateX(-2214.3px);}
+	100% {transform: translateX(0);}
+}
+
+.index-slider {
+	display:inline-block;
+	height: 30px;
+	background-color: black;
+	white-space: nowrap;
+	animation: slide-index 90s linear infinite;
+}
+
+.index-slider > div{
+	color: white;
+	height: 30px;
+	display:inline-block;
+	margin: 0 20px;
+}
+
+.index-slider > div span {
+	height: 30px;
+	line-height: 28px;
+	margin: 0 2px;
+	white-space: nowrap;
+}
+
+@keyframes slide-index {
+	0% {transform: translateX(0);}
+	100% {transform: translateX(-50%);}
+}
